@@ -5,7 +5,7 @@ const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
-		<nav className="flex flex-col md:flex-row  px-10 md:px-24 py-4 justify-between bg-indigo-50	">
+		<nav className="flex flex-col md:flex-row  px-10 md:px-24 py-4 justify-between bg-indigo-50 mb-10 md:mb-0">
 			<div className='flex justify-between '>
 				<Link to="/">
 					<img className="h-10 w-10" src={Logo} alt="Logo" />
@@ -32,15 +32,15 @@ const Navbar = () => {
 					</svg>
 				</button>
 			</div>
-			<ul className={`${!navbarOpen ? 'hidden md:flex' : ''} flex md:flex-row flex-col mt-8 space-y-6 md:mt-0 md:space-y-0  md:mx-0`}>
-				<li className="md:mx-8 md:px-4 pb-1 text-indigo-800 w-32 text-center self-center border-b border-transparent hover:border-indigo-800  ">
-					<NavLink to="/skills">Skills</NavLink>
+			<ul className={`${!navbarOpen ? 'hidden md:flex ' : ''} flex md:flex-row flex-col mt-8 space-y-6 md:mt-0 md:space-y-0  md:mx-0  `}>
+				<li className="md:mx-8 md:px-4 pb-1  w-32 text-center self-center  ">
+					<NavLink to="/skills" activeClassName="border-indigo-800" className="text-indigo-800 border-b border-transparent hover:border-indigo-800 transition duration-300 ease-in">Skills</NavLink>
 				</li>
-				<li className="md:mx-8 md:px-4 pb-1 text-indigo-800 w-32 text-center self-center border-b border-transparent hover:border-indigo-800  ">
-					<NavLink to="/portfolio">Portfolio</NavLink>
+				<li  className="md:mx-8 md:px-4 pb-1  w-32 text-center self-center  ">
+					<NavLink to="/portfolio" activeClassName="border-indigo-800" className="text-indigo-800 border-b border-transparent hover:border-indigo-800 transition duration-300 ease-in">Portfolio</NavLink>
 				</li>
-				<li className="md:mx-8 md:px-4 pb-1 text-indigo-800 w-32 text-center self-center border-b border-transparent hover:border-indigo-800 ">
-					<NavLink to="/contacto">Contacto</NavLink>
+				<li className="md:mx-8 md:px-4 pb-1  w-32 text-center self-center  ">
+					<NavLink to="/contacto" activeClassName="border-indigo-800" className="text-indigo-800 border-b border-transparent hover:border-indigo-800 transition duration-300 ease-in ">Contacto</NavLink>
 				</li>
 			</ul>
 		</nav>
