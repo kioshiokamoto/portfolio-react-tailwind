@@ -2,7 +2,7 @@
 
 Desarrollo de portfolio con react y tailwind (WIP)
 
-[![Desplegado](https://vercel.com/button)](portfolio-react-tailwind-qa6wcc7ps-kioshiokamoto.vercel.app)
+[![Desplegado](https://vercel.com/button)](https://portfolio-react-tailwind.vercel.app/)
 
 Para instalar aplicacion ejecutar:
 
